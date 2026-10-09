@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#586b4a" />
+    <meta name="description" content="Plano de treino de casa para estabilidade, core, força geral e mobilidade." />
+    <title>Treino Core — Plano de treino em casa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#topo" aria-label="Treino Core — início">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>treino<span>core</span></span>
+        </a>
+        <nav class="top-nav" aria-label="Navegação principal">
+          <a href="#visao-geral">Visão geral</a>
+          <a href="#treinos">Treinos</a>
+          <a href="#cuidados">Cuidados</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="top-nav-list">Menu</button>
+      </div>
+      <div class="mobile-nav" id="top-nav-list">
+        <a href="#visao-geral">Visão geral</a>
+        <a href="#treinos">Treinos</a>
+        <a href="#cuidados">Cuidados</a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="topo" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Plano de treino em casa</p>
+          <h1 id="hero-title">Movimento cuidado,<br /><em>força que fica.</em></h1>
+          <p class="hero-lede">Dois treinos simples para trabalhares estabilidade, core, mobilidade e força — ao teu ritmo e com atenção ao corpo.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#treinos">Ver os treinos <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#cuidados">Antes de começar <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Resumo visual do plano">
+          <div class="sun-disc"></div>
+          <div class="hero-note note-top"><strong>2</strong><span>treinos<br />por semana</span></div>
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-stat-card">
+            <span class="stat-label">Ritmo recomendado</span>
+            <strong>Terça <i>+</i> Sexta</strong>
+            <span class="stat-caption">pelo menos 2 dias de intervalo</span>
+          </div>
+          <div class="hero-note note-bottom"><span class="pulse"></span><span>qualidade<br />antes da velocidade</span></div>
+        </div>
+      </section>
+
+      <section class="intro-strip" id="visao-geral" aria-labelledby="overview-title">
+        <div class="section-kicker">01 / O plano</div>
+        <div class="overview-layout">
+          <div>
+            <h2 id="overview-title">Um ponto de partida<br /><span>seguro e possível.</span></h2>
+          </div>
+          <div class="overview-copy">
+            <p>Escolhe um treino, prepara um espaço estável e deixa que o movimento faça o resto. Os cartões abaixo mostram o que fazer, quanto fazer e como rever cada exercício.</p>
+            <div class="quick-facts" aria-label="Resumo do plano">
+              <div><strong>05 min</strong><span>aquecimento</span></div>
+              <div><strong>04–06</strong><span>exercícios principais</span></div>
+              <div><strong>02 dias</strong><span>de descanso entre treinos</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="training-section" id="treinos" aria-labelledby="training-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">02 / Em movimento</div>
+            <h2 id="training-title">Escolhe o teu<br /><span>treino de hoje.</span></h2>
+          </div>
+          <div class="progress-panel" aria-live="polite">
+            <div class="progress-topline"><span>Progresso desta sessão</span><strong id="progress-label">0 / 0</strong></div>
+            <div class="progress-track"><span id="progress-bar"></span></div>
+            <button class="reset-button" id="reset-progress" type="button">Recomeçar sessão</button>
+          </div>
+        </div>
+
+        <div class="training-tabs" role="tablist" aria-label="Escolher treino">
+          <button class="training-tab is-active" id="tab-treino-1" role="tab" aria-selected="true" aria-controls="panel-treino-1" data-training="treino-1">
+            <span class="tab-number">01</span><span><strong>Estabilidade</strong><small>Core &amp; equilíbrio</small></span><span class="tab-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="training-tab" id="tab-treino-2" role="tab" aria-selected="false" aria-controls="panel-treino-2" data-training="treino-2">
+            <span class="tab-number">02</span><span><strong>Força geral</strong><small>Mobilidade &amp; ritmo</small></span><span class="tab-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <div id="training-panels"></div>
+      </section>
+
+      <section class="care-section" id="cuidados" aria-labelledby="care-title">
+        <div class="care-heading">
+          <div class="section-kicker">03 / A tua prática</div>
+          <h2 id="care-title">O corpo dá sinais.<br /><span>Ouve-os.</span></h2>
+        </div>
+        <div class="care-grid">
+          <article class="care-card care-card-accent"><span class="care-icon" aria-hidden="true">◌</span><h3>Sem dor na coxa</h3><p>Respeita o limite da lesão. Desconforto leve pode acontecer; dor aguda é sinal para parar e ajustar.</p></article>
+          <article class="care-card"><span class="care-icon" aria-hidden="true">↘</span><h3>Calma no ritmo</h3><p>A qualidade do movimento importa mais do que a velocidade. Controla a subida e a descida.</p></article>
+          <article class="care-card"><span class="care-icon" aria-hidden="true">◷</span><h3>Descanso entre treinos</h3><p>Deixa pelo menos 2 dias de intervalo entre os dois treinos — por exemplo, terça e sexta.</p></article>
+        </div>
+        <div class="hydration-note"><span aria-hidden="true">✦</span><p><strong>Pequeno lembrete:</strong> bebe água antes, durante se precisares e no final do treino. O teu ritmo é o plano.</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner"><span class="footer-brand">treino<span>core</span></span><span>Um plano para voltar ao movimento com confiança.</span><a href="#topo">Voltar ao topo ↑</a></div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
